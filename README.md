@@ -85,14 +85,15 @@ By following these instructions, you will be able to reproduce the analysis and 
 
 
 ## <u>Key Findings</u>
-- White wine is rated significantly higher in quality than red wine by approximately threefold.
-- The most strongly correlated features related to quality are density, chlorides, volatile acidity, and alcohol, all showing statistical significance.
-- Alcohol and density exhibit a strong, statistically significant correlation. Due to their interdependence (density being a hydrometer reading for alcohol percentage), alcohol was excluded as a feature for cluster analysis.
-- Cluster analysis did not yield distinct enough clusters suitable for use in a regression model.
+- White wine outperformed red wine in quality by three fold.
+- Consider prolonging fermentation to reduce density, leading to an increase in alcohol content and potentially improving wine quality.
+- Prioritize efforts on minimizing chlorides (associated with saltiness) and volatile acidity (linked to vinegar flavor) to enhance wine quality.
+- Inconclusive cluster analysis due to high-density data in certain regions making it challenging to differentiate.
+
 
 
 ## <u>Conclusion</u>
-This project utilized ML regression models and KMeans cluster analysis to identify unique value clusters. However, cluster analysis was not effective in predicting future wine quality ratings. White wine generally received higher ratings than red wine. Key drivers for quality ratings included volatile acidity, chlorides, density, and alcohol percentage (derived from density). LASSO + LARS regression performed better than the baseline by 17%. 
+This project utilized ML regression models and KMeans cluster analysis to identify unique value clusters in wine data. However, cluster analysis was not effective in predicting future wine quality ratings. White wine generally received higher ratings than red wine. Key drivers for quality ratings included volatile acidity, chlorides, and density. The LASSO + LARS regression model was the top performer, consistently outperforming the baseline by 17%. This model proves valuable for predicting wine quality.
 
 
 ## <u>Next Steps</u>
