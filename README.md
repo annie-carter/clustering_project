@@ -1,0 +1,100 @@
+# Clustering Project: Wine Dataset
+![winetaste](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRky2ygrKbF3Mz9utL7qEsBBOhL44RiUlzWcw&usqp=CAU)
+
+## <u>Project Description</u>
+
+Unraveling the complexities of wine quality prediction requires considering both objective and subjective qualities. Aggregating and analyzing these attributes can assist vintners in crafting superior products. This project aims to uncover key predictors that influence wine quality, leveraging data from data.world on chemical properties of red and white wine. We will explore their relationship to overall wine quality, utilizing cluster analysis to identify contributing factors and regression models for quality rating predictions. Enhance wine production with data-driven insights and elevate the quality of wines..
+
+## <u>Project Goal</u>
+
+* Identify key variables (drivers) influencing wine quality ratings.
+* Apply Kmeans clustering to explore relationships among wine chemical properties.
+* Evaluate the effectiveness of the resulting clusters in linear and polynomial regression models for predicting wine quality ratings and implement the final model for future predictions.
+
+## <u>Initial Questions</u>
+1. Does category of wine "red or white" have a relationship to wine quality?
+2. Does density have a relationship with wine quality?
+3. <s> Does alcohol have relationship with wine quality?</s> Removed due to redundancy with density.
+3. Does chlorides have a relationship with wine quality?
+4. Does volitale acidity have a relationship with wine quality?
+
+##<u>Data Dictionary</u>
+
+There were 13 columns in the initial data and 13 columns after preparation; 6497 rows in the intial data and 5320 after preparation. The target variable is quality: 
+
+|     Target         |  Datatype  |       Definition                                |
+|:-------------------|:-----------|:------------------------------------------------|
+|  quality           |  int       |  wine quality median rating from 3 wine experts |
+
+
+|  Column Name       |  Datatype  |     Definition                                  |
+|:-------------------|:-----------|:------------------------------------------------|
+|  fixed acidity     |  float     |  acidic compunds contributing to tartness       |
+|  volatile acidity  |  float     |  acidic compounds contributing vinegar flavor   |
+|  citric acid       |  float     |  specific acid contributing to tartness         |
+|  residual sugar    |  float     |  sugar left after fermenting                    |
+|  chlorides         |  float     |  chloride-based salts (saltiness                |
+|free sulfur dioxide |  float     |  sulfur in wine that has not yet reacted        |
+|total sulfur dioxide|  float     |  total sulfur, reacted and not reacted          |
+|  density           |  float     |  hydrometer reading of alcohol content          |    
+|  pH                |  float     |  acidity vs alkilinity                          |    
+|  sulphates         |  float     |  type of sulfur-based salt                      |    
+|  alcohol           |  float     |  alcohol as a percentage of wine                |    
+|  Yes_white         |  int       |  is this a white wine? 1 = yes, 0 = no          |     
+
+
+## <u>Planning Process</u>
+
+##### Planning
+Clearly define the problem to be investigated, such as the impact square feet on property assessed tax value.
+Obtain the required data from the Data.world Wine Quality dataset at https://data.world/food/wine-quality"Zillow.csv" database.
+Create a comprehensive README.md file documenting all necessary information.
+* Acquire dataset from data.world Wine Quality dataset
+
+##### Acquisition and Preparation
+Develop the acquire.py and prepare.py scripts, which encompass functions for data acquisition, preparation, and data splitting.
+Implement a .gitignore file to safeguard sensitive information and include files (e.g., env file) that require discretion.
+##### Exploratory Analysis
+Create preliminary notebooks to conduct exploratory data analysis, generate informative visualizations, and perform relevant statistical tests (e.g., Pearsonr, t-test) utilizing Random Seed value 210 and alpha = .05.
+##### Modeling
+Train and evaluate various models, such as Ordinary Least Squares (OLS) Linear Regression, Least Absolute Shrinkage and Selection Operator (LASSO)+ Least Angle Regression (LARS), Tweedie Regression and Polynomial Regressionutilizing a Random Seed value of 123 and alpha= 1.0.
+Train the models using the available data.
+Validate the models to assess their performance.
+Select the most effective model (e.g., OLS) for further testing.
+##### Product Delivery
+Prepare a final notebook that integrates the best visuals, models, and pertinent data to present comprehensive insights.
+
+## <u>Instructions  to Reproduce the Final Project Notebook</u>
+To successfully run/reproduce the final project notebook, please follow these steps:
+1. Read this README.md document to familiarize yourself with the project details and key findings.
+2. Import separate white and red .csv files from data.world Wine Quality dataset at https://data.world/food/wine-quality
+3. Open the final_report.ipynb notebook in your preferred Jupyter Notebook environment or any compatible Python environment.
+4. Ensure that all necessary libraries or dependent programs are installed. You may need to install additional packages if they are not already present in your environment.
+5. Run the final_report.ipynb notebook to execute the project code and generate the results.
+
+By following these instructions, you will be able to reproduce the analysis and review the project's final report. Feel free to explore the code, visualizations, and conclusions presented in the notebook.
+
+
+## <u>Key Findings</u>
+- White wine is rated significantly higher in quality than red wine by approximately threefold.
+- The most strongly correlated features related to quality are density, chlorides, volatile acidity, and alcohol, all showing statistical significance.
+- Alcohol and density exhibit a strong, statistically significant correlation. Due to their interdependence (density being a hydrometer reading for alcohol percentage), alcohol was excluded as a feature for cluster analysis.
+- Cluster analysis did not yield distinct enough clusters suitable for use in a regression model.
+
+
+## <u>Conclusion</u>
+This project utilized ML regression models and KMeans cluster analysis to identify unique value clusters. However, cluster analysis was not effective in predicting future wine quality ratings. White wine generally received higher ratings than red wine. Key drivers for quality ratings included volatile acidity, chlorides, density, and alcohol percentage (derived from density). LASSO + LARS regression performed better than the baseline. Separately evaluating white and red wines is recommended, focusing on minimizing chlorides and volatile acidity for better quality, and prolonging fermentation to decrease density and increase alcohol content for potential quality improvement.
+
+
+## <u>Next Steps</u>
+Based on the findings, the following recommendations and next steps are proposed:
+1. Select different variables. Mainly discovered factors that predicted poor quality. Explore factors that predict better quality. 
+2.DBSCAN cluster analysis: Its outlier elimination can refine unique value clusters.
+3. Collect more data expand to include more wine (e.g., 4-6 )experts to gather more data.  
+
+   
+## <u>Recommendations</u>
+- To gain more nuanced insights, conducting separate evaluations for white and red wines is advised, with emphasis on minimizing chlorides and volatile acidity for improved quality
+- Vintners should explore collecting data on differentvariables (e.g., temperature, duration of fermentation to see if they may improve data for future clustering.
+- Consider conducting DBSCAN cluster analysis to eliminate outliers and potentially define unique clusters - Investigate diverse variables, focusing on factors that predict both poor and superior quality in wines.
+- Enhance data collection by including more wine experts (e.g., 4-6) to gather additional information for analysis.
