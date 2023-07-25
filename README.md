@@ -37,6 +37,20 @@ There were 13 columns in the initial data and 13 columns after preparation; 6497
 |total sulfur dioxide|  float     |  total sulfur, reacted and not reacted          |
 |  density           |  float     |  hydrometer reading of alcohol content          | |  pH                |  float     |  acidity vs alkilinity                          | |  sulphates         |  float     |  type of sulfur-based salt                      | |  alcohol           |  float     |  alcohol as a percentage of wine                | |  Yes_white         |  int       |  white wine = 1, red wine = 0                   |     
 
+## Initial Hypotheses
+Hypothesis 1 - Pearson R
+
+alpha = .05
+H0 = Chlorides has no relationship with wine quality
+Ha = Chlorides has a relationship with wine quality
+Outcome: We reject the Null Hypothesis.
+
+Hypothesis 2 - Pearson R
+
+alpha = .05
+H0 = Volatile acidity has no relationship with wine quality
+Ha = Volatile acidity has a relationship  wine quality
+Outcome: We reject the Null Hypothesis.
 
 ## <u>Planning Process</u>
 
