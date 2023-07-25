@@ -14,7 +14,6 @@ Unraveling the complexities of wine quality prediction requires considering both
 ## <u>Initial Questions</u>
 1. Does category of wine "red or white" have a relationship to wine quality?
 2. Does density have a relationship with wine quality?
-3. <s> Does alcohol have relationship with wine quality?</s> Removed due to redundancy with density.
 3. Does chlorides have a relationship with wine quality?
 4. Does volitale acidity have a relationship with wine quality?
 
@@ -36,11 +35,7 @@ There were 13 columns in the initial data and 13 columns after preparation; 6497
 |  chlorides         |  float     |  chloride-based salts (saltiness                |
 |free sulfur dioxide |  float     |  sulfur in wine that has not yet reacted        |
 |total sulfur dioxide|  float     |  total sulfur, reacted and not reacted          |
-|  density           |  float     |  hydrometer reading of alcohol content          |    
-|  pH                |  float     |  acidity vs alkilinity                          |    
-|  sulphates         |  float     |  type of sulfur-based salt                      |    
-|  alcohol           |  float     |  alcohol as a percentage of wine                |    
-|  Yes_white         |  int       |  is this a white wine? 1 = yes, 0 = no          |     
+|  density           |  float     |  hydrometer reading of alcohol content          | |  pH                |  float     |  acidity vs alkilinity                          | |  sulphates         |  float     |  type of sulfur-based salt                      | |  alcohol           |  float     |  alcohol as a percentage of wine                | |  Yes_white         |  int       |  white wine = 1, red wine = 0                   |     
 
 
 ## <u>Planning Process</u>
@@ -83,18 +78,14 @@ By following these instructions, you will be able to reproduce the analysis and 
 
 
 ## <u>Conclusion</u>
-This project utilized ML regression models and KMeans cluster analysis to identify unique value clusters. However, cluster analysis was not effective in predicting future wine quality ratings. White wine generally received higher ratings than red wine. Key drivers for quality ratings included volatile acidity, chlorides, density, and alcohol percentage (derived from density). LASSO + LARS regression performed better than the baseline. Separately evaluating white and red wines is recommended, focusing on minimizing chlorides and volatile acidity for better quality, and prolonging fermentation to decrease density and increase alcohol content for potential quality improvement.
+This project utilized ML regression models and KMeans cluster analysis to identify unique value clusters. However, cluster analysis was not effective in predicting future wine quality ratings. White wine generally received higher ratings than red wine. Key drivers for quality ratings included volatile acidity, chlorides, density, and alcohol percentage (derived from density). LASSO + LARS regression performed better than the baseline by 17%. 
 
 
 ## <u>Next Steps</u>
 Based on the findings, the following recommendations and next steps are proposed:
-1. Select different variables. Mainly discovered factors that predicted poor quality. Explore factors that predict better quality. 
-2.DBSCAN cluster analysis: Its outlier elimination can refine unique value clusters.
-3. Collect more data expand to include more wine (e.g., 4-6 )experts to gather more data.  
-
+1. Considering conducting DBSCAN cluster analysis can help in identifying and eliminating outliers; may produce more distinct clusters 
+2. To gain more nuanced insights, it is recommended to conduct separate evaluations for white and red wines. Particular emphasis should be placed on minimizing chlorides and volatile acidity, as these factors significantly influence poor wine quality.
    
 ## <u>Recommendations</u>
-- To gain more nuanced insights, conducting separate evaluations for white and red wines is advised, with emphasis on minimizing chlorides and volatile acidity for improved quality
-- Vintners should explore collecting data on differentvariables (e.g., temperature, duration of fermentation to see if they may improve data for future clustering.
-- Consider conducting DBSCAN cluster analysis to eliminate outliers and potentially define unique clusters - Investigate diverse variables, focusing on factors that predict both poor and superior quality in wines.
-- Enhance data collection by including more wine experts (e.g., 4-6) to gather additional information for analysis.
+- Vintners are encouraged to explore collecting data on various variables, such as temperature and duration of fermentation, with a focus on identifying factors that predict both poor and superior wine quality.
+- To enhance data collection, it is advisable to include more wine experts (e.g., 4-6) to gather additional information for comprehensive analysis. The expertise of wine experts can provide valuable insights for refining the clustering approach.
