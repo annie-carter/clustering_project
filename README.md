@@ -2,7 +2,7 @@
 ![winetaste](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRky2ygrKbF3Mz9utL7qEsBBOhL44RiUlzWcw&usqp=CAU)
 
 ## <u>Project Description</u>
-[![PyPI version](https://img.shields.io/pypi/v/beautifulsoup4.svg)](https://pypi.org/project/beautifulsoup4/)
+[![Beautiful Soup](https://img.shields.io/pypi/v/beautifulsoup4.svg)](https://pypi.org/project/beautifulsoup4/)
 [![PyPI version](https://img.shields.io/pypi/v/scikit-learn.svg)](https://pypi.org/project/scikit-learn/)
 
 
