@@ -3,6 +3,8 @@
 
 ## <u>Project Description</u>
 [![PyPI version](https://img.shields.io/pypi/v/beautifulsoup4.svg)](https://pypi.org/project/beautifulsoup4/)
+[![PyPI version](https://img.shields.io/pypi/v/scikit-learn.svg)](https://pypi.org/project/scikit-learn/)
+
 
 Unraveling the complexities of wine quality prediction requires considering both objective and subjective qualities. Aggregating and analyzing these attributes can assist vintners in crafting superior products. This project aims to uncover key predictors that influence wine quality, leveraging data from data.world on chemical properties of red and white wine. We will explore their relationship to overall wine quality, utilizing cluster analysis to identify contributing factors and regression models for quality rating predictions. Enhance wine production with data-driven insights and elevate the quality of wines..
 
