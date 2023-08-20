@@ -54,11 +54,12 @@ Unraveling the complexities of wine quality prediction requires considering both
 There were 13 columns in the initial data and 13 columns after preparation; 6497 rows in the intial data and 5320 after preparation. The target variable is quality: 
 
 |     Target         |  Datatype  |       Definition                                |
-|:-------------------|:-----------|:------------------------------------------------|
+|--------------------|------------|-------------------------------------------------|
 |  quality           |  int       |  wine quality median rating from 3 wine experts |
-|:-------------------|:-----------|:------------------------------------------------|
+|--------------------|------------|-------------------------------------------------|
+
 |  Column Name       |  Datatype  |     Definition                                  |
-|:-------------------|:-----------|:------------------------------------------------|
+|--------------------|------------|-------------------------------------------------|
 |  fixed acidity     |  float     |  acidic compunds contributing to tartness       |
 |  volatile acidity  |  float     |  acidic compounds contributing vinegar flavor   |
 |  citric acid       |  float     |  specific acid contributing to tartness         |
