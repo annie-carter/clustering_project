@@ -56,7 +56,6 @@ There were 13 columns in the initial data and 13 columns after preparation; 6497
 |     Target         |  Datatype  |       Definition                                |
 |--------------------|------------|-------------------------------------------------|
 |  quality           |  int       |  wine quality median rating from 3 wine experts |
-|--------------------|------------|-------------------------------------------------|
 
 |  Column Name       |  Datatype  |     Definition                                  |
 |--------------------|------------|-------------------------------------------------|
