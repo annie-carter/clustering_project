@@ -1,11 +1,14 @@
-# Clustering Project: Wine Dataset
+# Predicting Wine Quality
+# <bu>Clustering Project</bu>
+by Annie Carter, MSN, BS, RN
+Sourced by dataworld winetaste dataset
 ![winetaste](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRky2ygrKbF3Mz9utL7qEsBBOhL44RiUlzWcw&usqp=CAU)
 
 ___
 
 <a id='navigation'></a>
 [[Project Description](#project-description)]
-[[Statistical Testing Hypothesis](#statistical-tested-hypotheses)]
+[[Statistical Testing Hypothesis](#statistical-testing-hypotheses)]
 [[Data Dictionary](#data-dictionary)]
 [[Planning_Process](#planning-process)]
 [[Project Reproduction](#project-reproduction)]
@@ -38,8 +41,7 @@ There were 13 columns in the initial data and 13 columns after preparation; 6497
 |     Target         |  Datatype  |       Definition                                |
 |:-------------------|:-----------|:------------------------------------------------|
 |  quality           |  int       |  wine quality median rating from 3 wine experts |
-
-
+|:-------------------|:-----------|:------------------------------------------------|
 |  Column Name       |  Datatype  |     Definition                                  |
 |:-------------------|:-----------|:------------------------------------------------|
 |  fixed acidity     |  float     |  acidic compunds contributing to tartness       |
