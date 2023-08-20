@@ -123,6 +123,7 @@ To successfully run/reproduce the final project notebook, please follow these st
 5. Run the final_report.ipynb notebook to execute the project code and generate the results.
 
 By following these instructions, you will be able to reproduce the analysis and review the project's final report. Feel free to explore the code, visualizations, and conclusions presented in the notebook.
+
 [Jump to Navigation](#navigation)
 
 ## <u>Key Findings</u>
