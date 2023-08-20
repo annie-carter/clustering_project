@@ -1,7 +1,7 @@
-# Predicting Wine Quality
+# Wine Quality Prediction
 # <bu>Clustering Project</bu>
 by Annie Carter, MSN, BS, RN
-Sourced by dataworld winetaste dataset
+Sourced by data.world 
 ![winetaste](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRky2ygrKbF3Mz9utL7qEsBBOhL44RiUlzWcw&usqp=CAU)
 
 ___
@@ -25,6 +25,19 @@ Unraveling the complexities of wine quality prediction requires considering both
 * Identify key variables (drivers) influencing wine quality ratings.
 * Apply Kmeans clustering to explore relationships among wine chemical properties.
 * Evaluate the effectiveness of the resulting clusters in linear and polynomial regression models for predicting wine quality ratings and implement the final model for future predictions.
+**Tools & Technologies Used:** 
+
+![](https://img.shields.io/static/v1?message=Python&logo=python&labelColor=5c5c5c&color=2f5f98&logoColor=white&label=%20)
+![](https://img.shields.io/static/v1?message=Pandas&logo=pandas&labelColor=5c5c5c&color=2f5f98&logoColor=white&label=%20)
+![](https://img.shields.io/static/v1?message=SciKit-Learn&logo=scikit-learn&labelColor=5c5c5c&color=2f5f98&logoColor=white&label=%20)
+![](https://img.shields.io/static/v1?message=SciPy&logo=scipy&labelColor=5c5c5c&color=2f5f98&logoColor=white&label=%20)
+![](https://img.shields.io/static/v1?message=NumPy&logo=numpy&labelColor=5c5c5c&color=2f5f98&logoColor=white&label=%20)
+![](https://img.shields.io/static/v1?message=MatPlotLib&logo=python&labelColor=5c5c5c&color=2f5f98&logoColor=white&label=%20)
+![](https://img.shields.io/static/v1?message=Seaborn&logo=python&labelColor=5c5c5c&color=2f5f98&logoColor=white&label=%20)
+![](https://img.shields.io/static/v1?message=Canva&logo=canva&labelColor=5c5c5c&color=2f5f98&logoColor=white&label=%20)
+![](https://img.shields.io/static/v1?message=Markdown&logo=markdown&labelColor=5c5c5c&color=2f5f98&logoColor=white&label=%20)
+![](https://img.shields.io/static/v1?message=GitHub&logo=github&labelColor=5c5c5c&color=2f5f98&logoColor=white&label=%20)
+![](https://img.shields.io/static/v1?message=JupyterLab&logo=jupyter&labelColor=5c5c5c&color=2f5f98&logoColor=white&label=%20)
 
 ## <u>Initial Questions</u>
 1. Does category of wine "red or white" have a relationship to wine quality?
@@ -80,7 +93,7 @@ Outcome: We reject the Null Hypothesis.
 
 ##### Planning
 Clearly define the problem to be investigated, such as the impact square feet on property assessed tax value.
-Obtain the required data from the Data.world Wine Quality dataset at https://data.world/food/wine-quality"Zillow.csv" database.
+Obtain the required data from the Data.world Wine Quality dataset at https://data.world/food/wine-quality  database.
 Create a comprehensive README.md file documenting all necessary information.
 * Acquire dataset from data.world Wine Quality dataset
 
