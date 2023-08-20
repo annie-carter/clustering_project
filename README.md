@@ -1,5 +1,5 @@
-# Wine Quality Prediction
-# <bu>Clustering Project</bu>
+# Discovering Wine Quality Predictors
+# <bu>Clustering Analysis Project</bu>
 by Annie Carter, MSN, BS, RN
 Sourced by data.world 
 ![winetaste](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRky2ygrKbF3Mz9utL7qEsBBOhL44RiUlzWcw&usqp=CAU)
@@ -16,6 +16,7 @@ ___
 [[Next Steps](#next-steps)]
 [[Conclusion](#conclusion)]
 [[Recommendations](#recommendations)]
+[[Citations](#citations)]
 
 ## <u>Project Description</u>
 Unraveling the complexities of wine quality prediction requires considering both objective and subjective qualities. Aggregating and analyzing these attributes can assist vintners in crafting superior products. This project aims to uncover key predictors that influence wine quality, leveraging data from data.world on chemical properties of red and white wine. We will explore their relationship to overall wine quality, utilizing cluster analysis to identify contributing factors and regression models for quality rating predictions. Enhance wine production with data-driven insights and elevate the quality of wines..
@@ -148,3 +149,14 @@ Based on the findings, the following recommendations and next steps are proposed
 - To enhance data collection, it is advisable to include more wine experts (e.g., 4-6) to gather additional information for comprehensive analysis. The expertise of wine experts can provide valuable insights for refining the clustering approach.
 - 
 [Jump to Navigation](#navigation)
+
+ <u>Citations</u>
+P. Cortez, A. Cerdeira, F. Almeida, T. Matos and J. Reis.
+Modeling wine preferences by data mining from physicochemical properties.
+In Decision Support Systems, Elsevier, 47(4):547-553. ISSN: 0167-9236.
+
+Available at: [@Elsevier] http://dx.doi.org/10.1016/j.dss.2009.05.016
+[Pre-press (pdf)] http://www3.dsi.uminho.pt/pcortez/winequality09.pdf
+[bib] http://www3.dsi.uminho.pt/pcortez/dss09.bib
+
+
